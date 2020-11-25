@@ -1,0 +1,10 @@
+[Unit]
+Description = drone server daemon
+
+[Service]
+ExecStart = /home/pi/underwater-drone/scripts/serverJoy.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target

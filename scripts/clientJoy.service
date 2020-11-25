@@ -1,0 +1,10 @@
+[Unit]
+Description = drone client daemon
+
+[Service]
+ExecStart = /home/pi/underwater-drone/scripts/clientJoy.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target

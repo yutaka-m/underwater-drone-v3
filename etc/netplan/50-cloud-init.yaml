@@ -1,0 +1,19 @@
+network:
+    ethernets:
+        eth0:
+            #dhcp4: true
+            #optional: true
+            dhcp4: false
+            dhcp6: false
+            addresses: [192.168.3.36/24]
+            #gateway4: 192.168.3.1
+            #nameservers:
+            #  addresses: [8.8.8.8, 8.8.4.4]
+    wifis:
+        wlan0:
+            dhcp4: true
+            access-points:
+                <your-ssid>:
+                        password: "<your-password>"
+    version: 2
+    renderer: networkd
